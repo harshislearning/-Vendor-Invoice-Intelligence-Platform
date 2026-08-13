@@ -30,9 +30,6 @@ python freight_cost_prediction/train.py
 python invoice_flagging/train.py
 ```
 
-# Vendor Invoice Intelligence System  
-**Freight Cost Prediction & Invoice Risk Flagging**
-
 ## 📌 Table of Contents
 - <a href="#project-overview">Project Overview</a>
 - <a href="#business-objectives">Business Objectives</a>
