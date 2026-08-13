@@ -2,42 +2,6 @@
 
 AI-driven freight cost forecasting and invoice risk detection for procurement & finance operations, built on vendor purchase/invoice data with a Streamlit dashboard front end.
 
-## Modules
-
-- **Freight Cost Prediction** (`freight_cost_prediction/`) — regression model estimating freight cost from invoice dollar value.
-- **Invoice Risk Flagging** (`invoice_flagging/`) — Random Forest classifier (GridSearchCV-tuned) that flags invoices likely to need manual approval, based on cost/quantity/delivery-timing anomalies.
-- **Inference** (`inference/`) — thin prediction wrappers used by the app.
-- **App** (`app.py`) — Streamlit dashboard for interactive predictions.
-
-## Setup
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows
-pip install -r requirements.txt
-```
-
-## Screenshot
-
-<img width="1894" height="841" alt="Screenshot 2026-08-13 151213" src="https://github.com/user-attachments/assets/99d13554-fa23-42a5-85a8-57ba3817f479" />
-<img width="1890" height="841" alt="Screenshot 2026-08-13 151243" src="https://github.com/user-attachments/assets/57a130aa-44bb-41c6-a2c9-241b5d74af95" />
-<img width="1908" height="857" alt="Screenshot 2026-08-13 151253" src="https://github.com/user-attachments/assets/29d85852-ed8e-41e7-bf9a-296963d28a04" />
-<img width="1893" height="856" alt="Screenshot 2026-08-13 151311" src="https://github.com/user-attachments/assets/7cae2311-d164-4fdb-bcdd-ff2f63ba8e1d" />
-
-
-## 📌 Table of Contents
-- <a href="#project-overview">Project Overview</a>
-- <a href="#business-objectives">Business Objectives</a>
-- <a href="#data-sources">Data Sources</a>
-- <a href="#eda">Exploratory Data Analysis</a>
-- <a href="#models-used">Models Used</a>
-- <a href="#metrics">Evaluation Metrics</a>
-- <a href="#application">Application</a>
-- <a href="#project-structure">Project Structure</a>
-- <a href="#how-to-run-this-project">How to Run This Project</a>
-- <a href="#author--contact">Author & Contact</a>
----
-
 <h2><a class="anchor" id="project-overview"></a>📌 Project Overview</h2>
 
 This project implements an **end-to-end machine learning system** designed to support finance teams by:
@@ -74,6 +38,37 @@ Predict whether a vendor invoice should be flagged for manual approval due to ab
 
 ![](images/flag_invoice_prediction.png)
 ---
+
+## Setup
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+pip install -r requirements.txt
+```
+
+## Screenshot
+
+<img width="1894" height="841" alt="Screenshot 2026-08-13 151213" src="https://github.com/user-attachments/assets/99d13554-fa23-42a5-85a8-57ba3817f479" />
+<img width="1890" height="841" alt="Screenshot 2026-08-13 151243" src="https://github.com/user-attachments/assets/57a130aa-44bb-41c6-a2c9-241b5d74af95" />
+<img width="1908" height="857" alt="Screenshot 2026-08-13 151253" src="https://github.com/user-attachments/assets/29d85852-ed8e-41e7-bf9a-296963d28a04" />
+<img width="1893" height="856" alt="Screenshot 2026-08-13 151311" src="https://github.com/user-attachments/assets/7cae2311-d164-4fdb-bcdd-ff2f63ba8e1d" />
+
+
+## 📌 Table of Contents
+- <a href="#project-overview">Project Overview</a>
+- <a href="#business-objectives">Business Objectives</a>
+- <a href="#data-sources">Data Sources</a>
+- <a href="#eda">Exploratory Data Analysis</a>
+- <a href="#models-used">Models Used</a>
+- <a href="#metrics">Evaluation Metrics</a>
+- <a href="#application">Application</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#author--contact">Author & Contact</a>
+---
+
+
 
 <h2><a class="anchor" id="data-sources"></a>📂 Data Sources</h2>
 
