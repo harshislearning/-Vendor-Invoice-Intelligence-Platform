@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+.mypy_cache/
+
+# Data (excluded: inventory.db is 424MB, over GitHub's 100MB file limit)
+Data/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
