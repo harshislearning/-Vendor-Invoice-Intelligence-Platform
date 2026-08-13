@@ -17,18 +17,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Data
+## Screenshot
 
-The models are trained from `Data/inventory.db`, a SQLite database of vendor purchases and invoices. It's excluded from this repo (424MB, over GitHub's 100MB file limit) — place your own `inventory.db` at `Data/inventory.db` before retraining.
+<img width="1894" height="841" alt="Screenshot 2026-08-13 151213" src="https://github.com/user-attachments/assets/99d13554-fa23-42a5-85a8-57ba3817f479" />
+<img width="1890" height="841" alt="Screenshot 2026-08-13 151243" src="https://github.com/user-attachments/assets/57a130aa-44bb-41c6-a2c9-241b5d74af95" />
+<img width="1908" height="857" alt="Screenshot 2026-08-13 151253" src="https://github.com/user-attachments/assets/29d85852-ed8e-41e7-bf9a-296963d28a04" />
+<img width="1893" height="856" alt="Screenshot 2026-08-13 151311" src="https://github.com/user-attachments/assets/7cae2311-d164-4fdb-bcdd-ff2f63ba8e1d" />
 
-Pretrained models are included in `models/`, so the app runs out of the box without the raw database.
-
-## Train
-
-```bash
-python freight_cost_prediction/train.py
-python invoice_flagging/train.py
-```
 
 ## 📌 Table of Contents
 - <a href="#project-overview">Project Overview</a>
